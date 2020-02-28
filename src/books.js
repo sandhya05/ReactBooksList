@@ -74,6 +74,7 @@ export default class books extends Component {
                                         <td>{book.price}</td>
                                         <td>{book.rating}</td>
                                         <td>{book.status}</td>
+                                        
                                         <td><img src={require(`./images/${book.image}`)} alt="tile" width="100px" height="100px"></img></td>
                                     </tr>   
                                     </>
