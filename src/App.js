@@ -14,6 +14,7 @@ import {
   NavbarText
 } from 'reactstrap';
 import {
+    HashRouter ,
     BrowserRouter as Router,
     Switch,
     Route,
@@ -30,7 +31,7 @@ const Example = (props) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-      <Router>
+      <HashRouter basename="/">
           <div>
             <Navbar color="light" light expand="md">
                 <NavbarBrand href="/">BooksList</NavbarBrand>
@@ -66,7 +67,7 @@ const Example = (props) => {
             </Switch>
         </div>
 
-      </Router>
+      </HashRouter>
     
   );
 
