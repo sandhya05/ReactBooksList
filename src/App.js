@@ -1,76 +1,27 @@
-import React, { useState } from 'react';
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  NavbarText
-} from 'reactstrap';
-import {
-    HashRouter ,
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-  } from "react-router-dom";
-import Logout from './logout';
-import Home from './home';
-import Books from './books';
+import React, { Component } from 'react';
+import { HashRouter, Route, Link } from "react-router-dom";
 
-
-const Example = (props) => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggle = () => setIsOpen(!isOpen);
-
-  return (
+class App extends Component {
+  render() {
+    return (
       <HashRouter basename="/">
-          <div>
-            <Navbar color="light" light expand="md">
-                <NavbarBrand href="/">BooksList</NavbarBrand>
-                <NavbarToggler onClick={toggle} />
-                <Collapse isOpen={isOpen} navbar>
-                <Nav className="mr-auto" navbar>
-                    <NavItem>
-                    <NavLink href="/home/">Home</NavLink>
-                    </NavItem>
-                    <NavItem>
-                    <NavLink href="/books/">Books</NavLink>
-                    </NavItem>
-                    <NavItem>
-                    <NavLink href="/logout/">Logout</NavLink>
-                    </NavItem>
-                </Nav>
-                </Collapse>
-            </Navbar>
-            <Switch>
-                <Route exact path="/">
-                    <Home/>
-                </Route>
-                <Route path="/home">
-                    <Home />
-                </Route>
-                <Route path="/books">
-                    {/* <TileList /> */}
-                    <Books />
-                </Route>
-                <Route path="/logout">
-                    <Logout />
-                </Route>
-            </Switch>
+        <div>
+          <ul>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/about">About</Link></li>
+          </ul>
+
+          <hr />
+  
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
         </div>
-
       </HashRouter>
-    
-  );
-
+    );
+  }
 }
 
-export default Example;
+const Home = () => <div><h2>Home</h2></div>
+const About = () => <div><h2>About</h2></div>
+
+export default App;
