@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import {
+  HashRouter,
   BrowserRouter as Router,
   Switch,
   Route,
@@ -16,7 +17,7 @@ import Logout from './logout';
 export default function App() {
 
   return (
-    <Router>
+    <HashRouter basename="/">>
       <div>
         <ul>
           <li>
@@ -43,7 +44,7 @@ export default function App() {
         </Switch>
 
       </div>
-    </Router>
+    </HashRouter>
   )
 }
 
