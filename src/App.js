@@ -10,7 +10,6 @@ class App extends Component {
             <li><Link to="/">Home</Link></li>
             <li><Link to="/about">About</Link></li>
           </ul>
-
           <hr />
   
           <Route exact path="/" component={Home} />
@@ -21,7 +20,15 @@ class App extends Component {
   }
 }
 
-const Home = () => <div><h2>Home</h2></div>
+// const Home = () => <div><h2>Home</h2></div>
 const About = () => <div><h2>About</h2></div>
+
+function Home(){
+  return (
+    <div>
+      <h3>Welcome to shopping!!</h3>
+    </div>
+  );
+}
 
 export default App;
