@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/ReactWebApplication/static/css/main.34de6062.chunk.css",
+    "main.js": "/ReactWebApplication/static/js/main.908aa425.chunk.js",
+    "main.js.map": "/ReactWebApplication/static/js/main.908aa425.chunk.js.map",
+    "runtime~main.js": "/ReactWebApplication/static/js/runtime~main.9080b6c1.js",
+    "runtime~main.js.map": "/ReactWebApplication/static/js/runtime~main.9080b6c1.js.map",
+    "static/js/2.71a0200c.chunk.js": "/ReactWebApplication/static/js/2.71a0200c.chunk.js",
+    "static/js/2.71a0200c.chunk.js.map": "/ReactWebApplication/static/js/2.71a0200c.chunk.js.map",
+    "index.html": "/ReactWebApplication/index.html",
+    "precache-manifest.e6c421292b8ce5ab2db1832b5cc18286.js": "/ReactWebApplication/precache-manifest.e6c421292b8ce5ab2db1832b5cc18286.js",
+    "service-worker.js": "/ReactWebApplication/service-worker.js",
+    "static/css/main.34de6062.chunk.css.map": "/ReactWebApplication/static/css/main.34de6062.chunk.css.map",
+    "static/media/book4.png": "/ReactWebApplication/static/media/book4.b60d6771.png",
+    "static/media/books1.jpg": "/ReactWebApplication/static/media/books1.9bab33ef.jpg",
+    "static/media/books2.jpg": "/ReactWebApplication/static/media/books2.e2b6dd4f.jpg",
+    "static/media/books3.jpg": "/ReactWebApplication/static/media/books3.74710441.jpg"
+  }
+}
